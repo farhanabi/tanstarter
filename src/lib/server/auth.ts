@@ -6,7 +6,7 @@ import { db } from "./db";
 export const auth = betterAuth({
   baseURL: process.env.VITE_BASE_URL,
   database: drizzleAdapter(db, {
-    provider: "pg",
+    provider: "sqlite",
   }),
 
   // https://www.better-auth.com/docs/concepts/session-management#session-caching

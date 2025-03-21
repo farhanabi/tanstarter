@@ -6,7 +6,7 @@ export default {
   breakpoints: true,
   verbose: true,
   strict: true,
-  dialect: "postgresql",
+  dialect: "sqlite",
   dbCredentials: {
     url: process.env.DATABASE_URL as string,
   },
